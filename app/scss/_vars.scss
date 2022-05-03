@@ -1,0 +1,19 @@
+$default: rgba(18, 18, 18, 0.83);
+$accent: #FF6A28;
+$title: #121212;
+$subtitle: rgba(18, 18, 18, 0.6);
+
+%playfair {
+  font-family: 'PlayfairDisplay-Bold', serif;
+  font-weight: 700;
+}
+
+%poppins-500 {
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-600 {
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
