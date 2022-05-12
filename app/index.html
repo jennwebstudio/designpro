@@ -7,11 +7,11 @@
   <title>Design Pro studio</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
+        <a class="logo" href="#body">
           <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
         <nav class="menu">
@@ -20,22 +20,22 @@
           </button>
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">О нас</a>
+              <a class="menu__list-link" href="#about">О нас</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Наши услуги</a>
+              <a class="menu__list-link" href="#services">Наши услуги</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Цены</a>
+              <a class="menu__list-link" href="#prices">Цены</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Портфолио</a>
+              <a class="menu__list-link" href="#projects">Портфолио</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Отзывы</a>
+              <a class="menu__list-link" href="#reviews">Отзывы</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Контакты</a>
+              <a class="menu__list-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -43,7 +43,310 @@
       </div> <!--header__inner-->
     </div>
   </header>
+  <main class="main">
 
+    <section class="intro">
+      <div class="intro__wrapper">
+        <div class="container">
+          <div class="intro__inner">
+            <h1 class="intro__title title wow animate__fadeInDown">Студия дизайна «Design Pro»</h1>
+            <p class="intro__subtitle wow animate__fadeInDown" data-wow-delay=".5s">
+              Создадим идеальный интерьер в вашей квартире или доме
+            </p>
+            <a class="intro__btn button" href="#connection">Связаться</a>
+            <img class="intro__img" src="images/hero.png" alt="главное фото">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title title wow animate__fadeInDown">О нас</h2>
+        <p class="subtitle wow animate__fadeInLeft" data-wow-delay=".5s">Kто мы такие?</p>
+        <div class="about__inner">
+          <img class="about__img" src="images/about-bg.png" alt="фото">
+          <p class="about__text">
+            Мы, Татьяна Иванова и Надежда Миронова,  дизайнеры, архитекторы и соруководители студии “Дизайн Про”. Более 7 лет мы занимаемся разработкой и реализацией дизайна интерьеров в Самаре.
+            Нашей отличительной особенностью является то, что мы не только создаём  проекты, но и занимаемся их воплощением, т.е. осуществляем работы полного цикла от разработки дизайна интерьера до полной отделки под ключ с подбором мебели и монтажом инженерных сетей.
+            Чтобы создать долговечный и уникальный интерьер, недостаточно нарисовать красивую  картинку и подобрать похожие материалы. Готовый интерьер – это ответственная работа над проектной документацией, практическое знание рынка отделочных материалов и грамотное взаимодействие с проверенной строительной бригадой и подрядчиками. Мы умеем создавать жилье для комфортной жизни.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="services__title section-title title wow animate__fadeInDown">Наши услуги</h2>
+        <p class="subtitle wow animate__fadeInLeft" data-wow-delay=".5s">Что мы умеем?</p>
+        <div class="services__inner">
+          <div class="services__item wow animate__fadeInUp">
+            <img class="services__img" src="images/service-1.jpg" alt="фото">
+            <h3 class="services__item-title article-title">Дизайн-проект</h3>
+            <p class="services__text">
+              Создадим для вас полноценный проект от разработки дизайна интерьера до полной отделки с подбором мебели. Вам не нужно самостоятельно искать отделочные материалы и мебель. Всё это мы подберем для вас у наших партнеров-производителей
+            </p>
+          </div>
+          <div class="services__item wow animate__fadeInUp" data-wow-delay=".5s">
+            <img class="services__img" src="images/service-2.jpg" alt="фото">
+            <h3 class="services__item-title article-title">Консультации</h3>
+            <p class="services__text">
+              Если вы самостоятельно работаете над проектом ремонта или украшения своей квартиры (дома), и вам необходимо получить второе мнение или профессиональный совет о том, как собрать ваш интерьер воедино, то вы можете заказать у нас разовую консультацию.
+            </p>
+          </div>
+          <div class="services__item wow animate__fadeInUp" data-wow-delay="1s">
+            <img class="services__img" src="images/service-3.jpg" alt="фото">
+            <h3 class="services__item-title article-title">Ремонт</h3>
+            <p class="services__text">
+              Если в вашем доме назрели перемены, и вы затеяли ремонт, то совет от профессионального дизайнера поможет вам составить четкий план действий.   Мы сэкономим вам значительную часть денег и времени, а также подберем для вас материалы и мебель.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="projects__title section-title title wow animate__fadeInDown">Наши последние проекты</h2>
+        <div class="center">
+          <p class="projects__subtitle subtitle wow animate__fadeInDown" data-wow-delay=".5s">2022 год</p>
+        </div>
+        <div class="projects__item">
+          <div class="projects__text-box">
+            <h3 class="article-title">Современный загородный дом, минимализм</h3>
+            <p>
+              Дизайн интерьера в стиле минимализм в последние годы становится все более и более популярен. Благодаря лаконичной мебели, расслабляющей обстановке, приятному освещению и функциональности самого интерьера минимализм является отличным решением для оформления интерьера дома или квартиры.
+            </p>
+          </div>
+          <img class="projects__img" src="images/projects-1.png" alt="фото">
+        </div>
+        <div class="projects__item img-left">
+          <div class="projects__text-box">
+            <h3 class="article-title">Классика на все времена</h3>
+            <p>
+              Элегантная сдержанность – так можно в двух словах охарактеризовать неоклассическую идеологию. Компромиссный стиль предпочитает простоту, гармонию, естественные приглушенные краски.
+            </p>
+          </div>
+          <img class="projects__img" src="images/projects-2.png" alt="фото">
+        </div>
+        <div class="projects__item">
+          <div class="projects__text-box">
+            <h3 class="article-title">Квартира в скандинавском стиле</h3>
+            <p>
+              Особенностью скандинавского стиля является простота. Поэтому основные задачи мебели и других предметов домашнего обихода – сделать пространство красивым и адаптировать его к повседневным потребностям каждого человека.
+            </p>
+          </div>
+          <img class="projects__img" src="images/projects-3.png" alt="фото">
+        </div>
+      </div>
+    </section>
+
+    <section class="prices" id="prices">
+      <div class="container">
+        <h2 class="section-title title wow animate__fadeInDown">Цены на услуги</h2>
+        <p class="subtitle wow animate__fadeInLeft" data-wow-delay=".5s">лучшие цены в регионе</p>
+        <div class="prices__inner">
+          <div class="prices__item wow animate__fadeInUp">
+            <ul class="prices__item-top">
+              <li class="prices__item-name">Консультация дизайнера</li>
+              <li class="prices__item-num">3200 ₽
+                <div>Получите две консультации за ту же цену!</div>
+              </li>
+            </ul>
+            <div class="prices__item-content">
+              <ul class="prices__item-list">
+                <li class="prices__item-text">Ответы на вопросы по дизайну</li>
+                <li class="prices__item-text">Идеи планировочного решения</li>
+                <li class="prices__item-text">Консультация по отделочным материалам и мебели</li>
+                <li class="prices__item-text">Помощь в выборе недвижимости</li>
+                </ul>
+              <div class="center"><a class="button" href="#">Заказать</a></div> 
+            </div>
+          </div>
+          <div class="prices__item wow animate__fadeInUp" data-wow-delay=".5s">
+            <ul class="prices__item-top">
+              <li class="prices__item-name">Полный дизайн-проект</li>
+              <li class="prices__item-num">1400 ₽/м²</li>
+            </ul>
+            <div class="prices__item-content">
+              <ul class="prices__item-list">
+                <li class="prices__item-text">Техническое задание с консультацией дизайнера</li>
+                <li class="prices__item-text">Планировочное решение с мебелью и оборудованием</li>
+                <li class="prices__item-text">Эскизы</li>
+                <li class="prices__item-text">Адаптация инженерных проектов смежников</li>
+                <li class="prices__item-text">Фотореалистичная 3D визуализация</li>
+                <li class="prices__item-text">Ведомость по полной комплектации проекта</li>
+              </ul>
+              <div class="center"><a class="button" href="#">Заказать</a></div>
+            </div>
+          </div>
+          <div class="prices__item wow animate__fadeInUp" data-wow-delay="1s">
+            <ul class="prices__item-top">
+              <li class="prices__item-name">Дизайн-проект<br>
+                + авторский надзор</li>
+              <li class="prices__item-num">2000 ₽/м²</li>
+            </ul>
+            <div class="prices__item-content">
+              <ul class="prices__item-list">
+                <li class="prices__item-text">Полный дизайн-проект плюс</li>
+                <li class="prices__item-text">Контроль и работа со смежниками и инженерными проектами</li>
+                <li class="prices__item-text">Обмер 3D сканером</li>
+                <li class="prices__item-text">Адаптация инженерных проектов смежников</li>
+                <li class="prices__item-text">Ведомости материалов отделки и мебели с учётом бюджета под ключ</li>
+              </ul>
+              <div class="center"><a class="button" href="#">Заказать</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title title wow animate__fadeInDown">Отзывы</h2>
+        <p class="subtitle wow animate__fadeInLeft" data-wow-delay=".5s">наши клиенты рассказывают</p>
+        <div class="reviews__inner slider">
+          <div class="slider__item">
+            <div class="slider__box">
+              <img class="slider__img" src="images/slide-1.png" alt="слайд">
+              <div class="slider__content">
+                <h4 class="slider__title">Игорь Николаев</h4>
+                <p class="slider__subtitle">Тренер по плаванию</p>
+                <p class="slider__text">
+                  Девочки воплотили все наши пожелания и даже больше. Они очень тонко прочувствовали наш стиль жизни и перенесли его в интерьер. Когда рядом настоящие профессионалы, можно быть спокойным за результат.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__box">
+              <img class="slider__img" src="images/slide-1.png" alt="слайд">
+              <div class="slider__content">
+                <h4 class="slider__title">Ирина Николаева</h4>
+                <p class="slider__subtitle">Парикмахер</p>
+                <p class="slider__text">
+                  Девочки воплотили все наши пожелания и даже больше. Они очень тонко прочувствовали наш стиль жизни и перенесли его в интерьер. Когда рядом настоящие профессионалы, можно быть спокойным за результат.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__box">
+              <img class="slider__img" src="images/slide-1.png" alt="слайд">
+              <div class="slider__content">
+                <h4 class="slider__title">Арсений</h4>
+                <p class="slider__subtitle">Директор ресторана</p>
+                <p class="slider__text">
+                  Девочки воплотили все наши пожелания и даже больше. Они очень тонко прочувствовали наш стиль жизни и перенесли его в интерьер. Когда рядом настоящие профессионалы, можно быть спокойным за результат.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="connection" id="connection">
+      <div class="container">
+        <div class="connection__inner">
+          <div class="connection__content">
+            <h2 class="section-title title wow animate__fadeInDown">Свяжитесь с нами</h2>
+            <p class="connection__text">
+              Экономьте на ремонте с нашими партнерами - производителями отделочных материалов и мебели. <br>
+              Участвуйте в акции - закажите две консультации дизайнера по цене одной!
+            </p>
+          </div>
+          <form class="connection__form form" action="#">
+            <label class="form__label">
+              Ваше имя*
+              <input class="form__input" type="text" placeholder="Введите ваше имя" required>
+            </label>
+            <label class="form__label">
+              Ваш email*
+              <input class="form__input" type="text" placeholder="Введите адрес вашей почты" required>
+            </label>
+            <label class="form__label">
+              Тип жилья
+              <input class="form__input" type="text" placeholder="Напишите о вашем жилье">
+            </label>
+            <label class="form__label">
+              Ваш комментарий
+              <textarea class="form__textarea" placeholder="Расскажите о том, что вы хотите"></textarea>
+            </label>
+            <button class="button form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="section-title title wow animate__fadeInDown">Контакты</h2>
+        <p class="subtitle wow animate__fadeInLeft" data-wow-delay=".5s">мы в центре</p>
+        <div class="contacts__inner">
+          <img class="contacts__map" src="images/map.png" alt="карта">
+          <div class="contcts__content">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                Офис работает с 10 утра до 20 вечера. Ежедневно.
+              </li>
+              <li class="contacts__item">
+                Адрес: ул. Самарская, 159, цокольный этаж, вход №1
+              </li>
+              <li class="contacts__item">Телефон: 
+                <a class="contacts__link" href="tel:+79999999999">+7 (999) 999-9999</a>
+              </li>
+              <li class="contacts__item">Email: 
+                <a class="contacts__link" href="mailto: designpro@mail.ru">designpro@mail.ru</a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.9083 4.25024C23.2031 1.54644 19.6072 0.0576172 15.7813 0.0576172C15.781 0.0576172 15.7801 0.0576172 15.7799 0.0576172C13.8877 0.0578424 12.0436 0.424024 10.2994 1.14625C8.55499 1.86848 6.99216 2.91275 5.65398 4.25024C2.949 6.95382 1.4594 10.5485 1.4594 14.372C1.4594 16.6522 2.00986 18.9182 3.05287 20.9372L0.645536 27.8109C0.475869 28.2957 0.595965 28.8227 0.959633 29.186C1.21402 29.4404 1.54885 29.5756 1.89314 29.5756C2.04073 29.5756 2.18989 29.5508 2.33545 29.4999L9.2127 27.094C11.2327 28.1365 13.4999 28.6867 15.7813 28.6867C19.6068 28.6867 23.2031 27.1976 25.9083 24.4941C28.6133 21.7905 30.1031 18.1958 30.1031 14.3723C30.1031 10.5485 28.6135 6.95382 25.9083 4.25024ZM24.6835 23.2698C22.3057 25.6467 19.144 26.9553 15.7813 26.9553C13.7241 26.9553 11.6804 26.4468 9.87109 25.4843C9.54302 25.31 9.15525 25.28 8.80712 25.4019L2.55896 27.5875L4.74593 21.3426C4.86783 20.9942 4.83764 20.6066 4.66324 20.2789C3.70044 18.471 3.19144 16.4284 3.19144 14.372C3.19144 11.0111 4.50101 7.85103 6.87882 5.47445C9.25642 3.0981 12.4177 1.78921 15.7801 1.78876H15.7813C19.1442 1.78876 22.3057 3.09765 24.6835 5.47445C27.0615 7.85103 28.3711 11.0109 28.3711 14.372C28.3711 17.7332 27.0615 20.8933 24.6835 23.2698Z" fill="#FF6A28"/>
+                  <path d="M21.1038 15.6503C20.445 14.9918 19.3729 14.9918 18.7141 15.6503L17.9935 16.3705C16.2042 15.3961 14.7563 13.9489 13.7811 12.1606L14.5017 11.4403C15.1607 10.7819 15.1607 9.71036 14.5017 9.05186L12.5599 7.11106C11.901 6.45256 10.8289 6.45256 10.1701 7.11106L8.61673 8.66361C7.72694 9.55294 7.68255 11.0818 8.49168 12.9688C9.19423 14.6072 10.4799 16.4079 12.1119 18.0391C13.7439 19.6702 15.5456 20.9552 17.1848 21.6574C18.0818 22.0416 18.8977 22.2333 19.6027 22.2333C20.3817 22.2333 21.0252 21.9993 21.4923 21.5324L23.0456 19.9796V19.9799C23.3649 19.6607 23.5407 19.2367 23.5407 18.7856C23.5407 18.3343 23.3649 17.9102 23.0456 17.5913L21.1038 15.6503ZM20.2674 20.3082C20.0135 20.562 19.2325 20.651 17.8673 20.0663C16.4257 19.4488 14.8167 18.294 13.3368 16.8148C11.8569 15.3357 10.7016 13.7277 10.0838 12.2869C9.49864 10.9224 9.58764 10.1416 9.84158 9.88782L11.3652 8.36499L13.2471 10.2461L12.3451 11.1478C11.9373 11.5554 11.8388 12.1736 12.1004 12.6862C13.2863 15.0103 15.1423 16.8653 17.4676 18.0505C17.9806 18.312 18.5992 18.2138 19.007 17.806L19.9089 16.9045L21.7911 18.7856L20.2674 20.3082Z" fill="#FF6A28"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.7679 0.382026C29.4738 0.0384337 28.9863 -0.0889855 28.5528 0.0639175L1.01958 9.60915C0.469519 9.80094 0.0834207 10.266 0.0117437 10.8229C-0.0592473 11.3772 0.195402 11.915 0.673099 12.2245L4.6087 14.8019C4.98999 15.0517 5.48028 15.0785 5.88859 14.8718L14.4257 10.5529L7.77212 15.3191C7.45976 15.5429 7.27313 15.8999 7.27313 16.2738V20.6887C7.27313 21.1441 7.5335 21.5613 7.95257 21.7779C8.37233 21.9945 8.87934 21.973 9.27803 21.7208L12.2681 19.8181L15.2085 21.7414C15.4661 21.9108 15.7729 22 16.0826 22C16.1872 22 16.2923 21.9897 16.3958 21.969C16.8087 21.8864 17.174 21.6417 17.3982 21.2977L29.8551 1.59207C30.0976 1.21267 30.0628 0.727156 29.7679 0.382026ZM16.0168 20.2271L12.9718 18.2352C12.76 18.0964 12.5159 18.0269 12.272 18.0269C12.0334 18.0269 11.7945 18.0935 11.5854 18.2266L9.03277 19.851V16.523L20.7816 8.10692C21.3063 7.73103 21.4384 7.04693 21.0887 6.51572C20.7388 5.98451 20.0383 5.80503 19.4592 6.09809L5.34357 13.2391L2.01481 11.0591L27.3691 2.26937L16.0168 20.2271Z" fill="#FF6A28"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.5545 0H8.01002C3.60183 0 0.015625 3.58434 0.015625 7.99022V21.5279C0.015625 25.9336 3.60183 29.5179 8.01002 29.5179H21.5547C25.9627 29.5179 29.5489 25.9336 29.5489 21.5279V7.99022C29.5489 3.58434 25.9627 0 21.5545 0ZM27.8175 21.5279C27.8175 24.9794 25.008 27.7874 21.5545 27.7874H8.01002C4.55651 27.7874 1.74699 24.9794 1.74699 21.5279V7.99022C1.74699 4.53853 4.55651 1.73046 8.01002 1.73046H21.5547C25.008 1.73046 27.8175 4.53853 27.8175 7.99022V21.5279Z" fill="#FF6A28"/>
+                  <path d="M14.7822 6.6875C10.3294 6.6875 6.70691 10.3081 6.70691 14.7586C6.70691 19.209 10.3294 22.8296 14.7822 22.8296C19.235 22.8296 22.8574 19.209 22.8574 14.7586C22.8574 10.3081 19.235 6.6875 14.7822 6.6875ZM14.7822 21.0992C11.2843 21.0992 8.43828 18.2549 8.43828 14.7586C8.43828 11.2625 11.2843 8.41796 14.7822 8.41796C18.2803 8.41796 21.1261 11.2625 21.1261 14.7586C21.1261 18.2549 18.2803 21.0992 14.7822 21.0992Z" fill="#FF6A28"/>
+                  <path d="M23.0506 3.82129C21.7347 3.82129 20.6644 4.89123 20.6644 6.20619C20.6644 7.52138 21.7347 8.59133 23.0506 8.59133C24.3664 8.59133 25.4369 7.52138 25.4369 6.20619C25.4369 4.891 24.3664 3.82129 23.0506 3.82129ZM23.0506 6.86063C22.6896 6.86063 22.3958 6.56697 22.3958 6.20619C22.3958 5.84519 22.6896 5.55175 23.0506 5.55175C23.4117 5.55175 23.7056 5.84519 23.7056 6.20619C23.7056 6.56697 23.4117 6.86063 23.0506 6.86063Z" fill="#FF6A28"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="19" height="30" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1845_323)">
+                  <path d="M11.1686 30H6.36959C5.568 30 4.91595 29.3472 4.91595 28.5448V17.7086H2.11612C1.31453 17.7086 0.662476 17.0556 0.662476 16.2534V11.61C0.662476 10.8076 1.31453 10.1548 2.11612 10.1548H4.91595V7.82959C4.91595 5.52406 5.63911 3.56255 7.00702 2.15744C8.38109 0.745926 10.3014 0 12.5603 0L16.2203 0.0059509C17.0205 0.00732422 17.6714 0.660095 17.6714 1.46118V5.7724C17.6714 6.57486 17.0194 7.22763 16.2182 7.22763L13.754 7.22855C13.0024 7.22855 12.8111 7.37938 12.7702 7.42561C12.7027 7.50229 12.6224 7.71904 12.6224 8.31757V10.1546H16.033C16.2898 10.1546 16.5385 10.218 16.7523 10.3374C17.2134 10.5954 17.5 11.0831 17.5 11.6103L17.4983 16.2536C17.4983 17.0556 16.8461 17.7084 16.0447 17.7084H12.6224V28.5448C12.6224 29.3472 11.9701 30 11.1686 30ZM6.67276 28.2413H10.8654V16.9212C10.8654 16.3854 11.301 15.9496 11.8359 15.9496H15.7415L15.7431 11.9135H11.8358C11.3008 11.9135 10.8654 11.4777 10.8654 10.9419V8.31757C10.8654 7.63046 10.9352 6.84906 11.4532 6.26175C12.0793 5.55176 13.0658 5.46982 13.7535 5.46982L15.9145 5.4689V1.76422L12.5589 1.75873C8.92867 1.75873 6.67276 4.08508 6.67276 7.82959V10.9419C6.67276 11.4775 6.23744 11.9135 5.70244 11.9135H2.41928V15.9496H5.70244C6.23744 15.9496 6.67276 16.3854 6.67276 16.9212V28.2413ZM16.2168 1.76468H16.2171H16.2168Z" fill="#FF6A28"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1845_323">
+                  <rect width="18" height="30" fill="white" transform="translate(0.54895)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer center">
+    <a class="logo" href="#body">
+      <img class="logo__img" src="images/logo.svg" alt="logo">
+    </a>
+  </footer>
   
   <script src="js/main.min.js"></script>
 </body>

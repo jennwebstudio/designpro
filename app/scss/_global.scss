@@ -28,3 +28,59 @@ a {
   font-size: 20px;
   line-height: 30px;
 }
+
+.title {
+  @extend %playfair;
+  color: $title;
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: 50px;
+  line-height: 67px;
+}
+
+.article-title {
+  @extend %poppins-600;
+  font-size: 36px;
+  line-height: 54px;
+  color: $title;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 175%;
+  color: $subtitle;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  padding-left: 85px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 67px;
+    height: 3px;
+    background-color: $accent;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 40px;
+  background-color: $accent;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.img-left {
+  flex-direction: row-reverse;
+}
+
