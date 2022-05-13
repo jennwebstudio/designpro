@@ -1,5 +1,9 @@
 $(function () {
  
+  $(".nav-link").fancybox({
+		'hideOnContentClick': true
+	});
+
   wow = new WOW(
   {
     boxClass:     'wow',      // default

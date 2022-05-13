@@ -39,11 +39,36 @@
             </li>
           </ul>
         </nav>
-        <a class="nav-link" href="#">Заказать звонок</a>
+        <a class="nav-link" href="#modal">Заказать звонок</a>
       </div> <!--header__inner-->
     </div>
   </header>
   <main class="main">
+
+  <div style="display: none;">
+    <div class="modal" id="modal">
+      <h4 class="modal__title">Оставьте ваши данные</h4>
+      <form class="modal__form form" action="#">
+        <label class="form__label modal__label">
+          Ваше имя
+          <input class="form__input" type="text" placeholder="Введите ваше имя">
+        </label>
+        <label class="form__label modal__label">
+          Ваш телефон*
+          <input class="form__input" type="text" placeholder="Введите ваш телефон" required>
+        </label>
+        <button class="button form__btn" type="submit">Отправить</button>
+      </form>
+      <p class="modal__small-text">
+        Нажимая кнопку, Вы принимаете условия 
+        <a href="#">передачи данных</a>
+      </p>
+      <p class="modal__text">
+        Или просто позвоните нам:
+        <span>+7 (999) 999-9999</span>
+      </p>
+    </div>
+  </div>
 
     <section class="intro">
       <div class="intro__wrapper">
@@ -347,7 +372,8 @@
       <img class="logo__img" src="images/logo.svg" alt="logo">
     </a>
   </footer>
-  
+
+ 
   <script src="js/main.min.js"></script>
 </body>
 </html>

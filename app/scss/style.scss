@@ -45,6 +45,38 @@
   @extend %poppins-600;
 }
 
+.modal {
+  width: 800px;
+  padding: 50px 100px;
+  text-align: center;
+  &__title {
+    font-size: 28px;
+    color: $title;
+    margin-bottom: 30px;
+  }
+  &__form {
+    margin-bottom: 15px;
+  }
+  &__label {
+    text-align: left;
+  }
+  &__small-text {
+    font-size: 14px;
+    margin-bottom: 30px;
+    a {
+      color: $default;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+  &__text {
+    span {
+      font-size: 30px;
+      color: $title;
+    }
+  }
+}
+
 .intro {
   margin-top: 120px;
   padding: 40px 0 55px;
@@ -352,6 +384,11 @@
       font-size: 18px;
       color: $subtitle;
     }
+    &:focus,
+    &:active {
+      border: 1px solid $subtitle;
+      border-radius: 5px;
+    }
   }
   &__textarea {
     display: block;
@@ -366,6 +403,11 @@
     &::placeholder {
       font-size: 18px;
       color: $subtitle;
+    }
+    &:focus,
+    &:active {
+      border: 1px solid $subtitle;
+      border-radius: 5px;
     }
   }
   &__btn {
