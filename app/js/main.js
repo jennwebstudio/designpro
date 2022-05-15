@@ -1,5 +1,9 @@
 $(function () {
- 
+  
+  $('.mobile__btn, .menu a').on('click', function () {
+    $('.header__inner').toggleClass('header__inner--active');
+  });
+
   $(".nav-link").fancybox({
 		'hideOnContentClick': true
 	});
@@ -19,7 +23,7 @@ $(function () {
         event.preventDefault();
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top - 120}, 1500);
+        $('body,html').animate({scrollTop: top - 150}, 1500);
     });
 
 
@@ -27,6 +31,5 @@ $(function () {
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-left.svg"></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrow-right.svg"></button>',
   });
-
 
 });

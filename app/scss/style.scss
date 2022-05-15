@@ -20,11 +20,13 @@
     flex-wrap: wrap;
   } 
 }
-
-.menu {
+.mobile {
+  display: flex;
   &__btn {
     display: none;
   }
+}
+.menu {
   &__list {
     display: flex;
   }
@@ -71,6 +73,7 @@
   }
   &__text {
     span {
+      display: block;
       font-size: 30px;
       color: $title;
     }
@@ -136,7 +139,7 @@
     justify-content: space-between;
   }
   &__item {
-    width: 380px;
+    width: 32%;
     padding: 20px 20px 30px;
     background-color: #fff;
     border-radius: 5px;
@@ -185,6 +188,7 @@
   &__item {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
   &__img {
     object-fit: cover;
@@ -208,7 +212,7 @@
     justify-content: space-between;
   }
   &__item {
-    width: 370px;
+    width: 32%;
     height: 700px;
     background-color: #fff;
     border: 1px solid $title;
@@ -219,8 +223,8 @@
     position: relative;
     &::after {
       @extend %shadow;
-      left: 100px;
-      width: 180px;
+      left: 26%;
+      width: 47%;
       height: 150px;
     }
   }
@@ -315,7 +319,7 @@
   border: none;
   cursor: pointer;
   position: absolute;
-  bottom: 100px;
+  bottom: 20px;
   left: calc(50% + 20px);
   z-index: 5;
 }
@@ -358,8 +362,8 @@
     position: relative;
     &::after {
       @extend %shadow;
-      left: 100px;
-      width: 300px;
+      left: 19%;
+      width: 58%;
       height: 150px;
     }
   }
